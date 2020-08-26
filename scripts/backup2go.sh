@@ -17,4 +17,12 @@ fi
 # Create cache dir if it does not exist
 mkdir -p "${CACHEDIR}"
 
-/usr/local/aw/bin/nsdchat -c Server 10001 lastend > ${OUTPUT_FILE}
+# check if the Archiware backup2go client is installed
+
+if [ -f /usr/local/aw/bin/nsdchat ];
+then
+	/usr/local/aw/bin/nsdchat -c Server 10001 lastend > ${OUTPUT_FILE}
+else
+	echo "Backup2go  is not installed, skipping"
+	exit 0
+fi

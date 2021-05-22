@@ -1,10 +1,9 @@
 <div class="col-lg-4 col-md-6">
-    <div class="panel panel-default">
-        <div class="panel-heading" data-container="body">
-            <h3 class="panel-title"><i class="fa fa-clock-o"></i> 
-                <span data-i18n="backup2go.widget_title"></span>
-                <list-link data-url="/show/listing/backup2go/backup2go/"></list-link>
-            </h3>
+    <div class="card">
+        <div class="card-header" data-container="body">
+            <i class="fa fa-clock-o"></i> 
+            <span data-i18n="backup2go.widget_title"></span>
+            <a href="/show/listing/backup2go/backup2go/" class="pull-right"><i class="fa fa-list"></i></a>
         </div>
 
         <div class="list-group scroll-box">
